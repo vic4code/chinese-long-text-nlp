@@ -1,0 +1,21 @@
+# See the details of 'training_args' and 'compression_args' from the websites: https://github.com/PaddlePaddle/PaddleNLP/blob/develop/paddlenlp/trainer/training_args.py and https://github.com/PaddlePaddle/PaddleNLP/blob/develop/paddlenlp/trainer/compression_args.py
+data_args:
+    verdict_sheet_path: ./data/inference/infer_example.json
+    # data_file_to_inference: ./data/inference/infer_example.json
+    data_file_to_inference: ./data/inference/uie_processed_data.json
+    label_file: ./data/modeling/text_classification/label_studio/labels.txt
+    threshold: 0.5
+
+model_args:
+    model_name_or_path: utc-base # utc model name
+    checkpoint_path: ./models/text_classification/utc/checkpoints/model_best # fintuned model path
+
+infer_args:
+    # utc
+    output_dir: ./reports/text_classification/inference_results
+    max_seq_length: 768
+    per_device_eval_batch_size: 1
+    seed: 30678
+    device: gpu # or "cpu"
+    freeze_dropout: True
+    freeze_plm: True

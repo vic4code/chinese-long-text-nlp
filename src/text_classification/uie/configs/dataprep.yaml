@@ -1,0 +1,9 @@
+label_studio_file: ./data/modeling/text_classification/label_studio/uie_input_example.json
+save_dir: ./data/modeling/text_classification/model_train/uie
+negative_ratio: 5
+split_ratio: [0.8, 0.1, 0.1] # [train, dev, test]
+task_type: ext
+options: ["正向", "负向"]
+prompt_prefix: 情感倾向
+is_shuffle: True
+seed: 1000

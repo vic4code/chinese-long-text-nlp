@@ -1,0 +1,6 @@
+label_studio_file: ./data/modeling/text_classification/label_studio/utc_input_example.json
+label_file: ./data/modeling/text_classification/label_studio/labels.txt
+save_dir: ./data/modeling/text_classification/model_train/utc/dataset
+splits: [0.8, 0.1, 0.1] # [train, dev, test]
+is_shuffle: True
+seed: 1000

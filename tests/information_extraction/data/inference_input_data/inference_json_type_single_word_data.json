@@ -1,0 +1,21 @@
+[
+    {
+        "level_0": 0,
+        "index": 0,
+        "id": 35864,
+        "jid": "CLEV,106,壢簡,1417,20180629,2",
+        "jyear": "106",
+        "jcase": "壢簡",
+        "jno": "1417",
+        "jdate_dt": 1530230400000,
+        "jtitle": "損害賠償",
+        "jtype": "中壢簡易庭",
+        "jfull_compress": "臺",
+        "litigation_type": "民事判決",
+        "etl_datetime": 1688136019337,
+        "source_id": 0,
+        "source_cnt": 1,
+        "source_id_v2": 0,
+        "source_cnt_v2": 1
+    }
+]

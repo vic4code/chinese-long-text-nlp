@@ -1,0 +1,11 @@
+-i https://pypi.org/simple
+typer
+python-dotenv
+typing-extensions; python_version >= '3.7'
+paddlenlp
+paddlepaddle-gpu
+onnx
+onnxconverter-common
+onnxruntime-gpu
+cn2an
+opencc

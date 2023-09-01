@@ -1,0 +1,6 @@
+information_extraction_path: "./reports/information_extraction/inference_results/"
+information_extraction_file: "inference_results_0831_091354_csv_type.csv"
+text_classification_path: "./reports/text_classification/inference_results/"
+text_classification_file: "inference_results.json"
+save_path: "./reports/merge_results"
+save_file: "merged_results.csv"

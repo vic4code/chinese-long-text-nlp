@@ -1,0 +1,23 @@
+data_args:
+    data_file: "./data/inference/infer_example.json"
+    save_dir: "./reports/information_extraction/inference_results/"
+    save_name: "inference_results.json"
+    is_regularize_data: False
+    is_export_labelstudio: False
+    is_export_csv: True
+    is_regularize_csv_money: False
+    text_list: null
+
+taskflow_args:
+    device_id: 0
+    precision: "fp32"
+    batch_size: 1
+    model: "uie-base"
+    task_path: null
+    # task_path: "./models/information_extraction/checkpoint/checkpoint-9200"
+
+
+strategy_args:
+    select_strategy: "all"
+    select_strategy_threshold: 0.5
+    select_key: ["text", "start", "end", "probability"]

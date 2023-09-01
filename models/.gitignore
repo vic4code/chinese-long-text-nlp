@@ -1,0 +1,6 @@
+# *
+# !.gitignore
+information_extraction/checkpoint/checkpoint-9200
+information_extraction/checkpoint/model_best/*
+
+text_classification/utc/checkpoints/model_best/*

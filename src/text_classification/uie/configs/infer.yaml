@@ -1,0 +1,12 @@
+# Data args
+label_file: ./data/modeling/text_classification/label_studio/labels.txt
+# data_file_or_path_to_inference: ./data/modeling/text_classification/model_train/utc/dataset
+data_file_or_path_to_inference: ./data/inference/infer_example.json
+max_seq_length: 768
+
+# Model args
+schema: ["原告年齡", "肇事過失責任比例", "受有傷害"]
+utc_model_name_or_path: utc-base
+uie_model_name_or_path: ./models/text_classification/uie/checkpoints/model_best
+threshold: 0.4
+dynamic_adjust_length: True

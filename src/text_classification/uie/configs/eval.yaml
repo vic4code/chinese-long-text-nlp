@@ -1,0 +1,7 @@
+# See the details of 'training_args' and 'compression_args' from the websites: https://github.com/PaddlePaddle/PaddleNLP/blob/develop/paddlenlp/trainer/training_args.py and https://github.com/PaddlePaddle/PaddleNLP/blob/develop/paddlenlp/trainer/compression_args.py
+checkpoint_path: ./models/text_classification/uie/checkpoints/model_best
+test_path: ./data/modeling/text_classification/model_train/uie/test.txt
+output_dir: ./models/text_classification/uie/checkpoints/model_best/test_results
+batch_size: 16
+device: gpu
+max_seq_length: 768
